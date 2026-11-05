@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Ingénieur</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h2 class="logo">Portfolio Ingénieur</h2>
+    <nav>
+      <a href="#apropos">À propos</a>
+      <a href="#competences">Compétences</a>
+      <a href="#projets">Projets</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="apropos" class="banner">
+    <div class="photo">Photo</div>
+    <h1>Marwa Ourrai</h1>
+    <p>Étudiants en cycle ingénieur à l'ENSA El Jadida, passionnés par le développement logiciel et la gestion de projet.</p>
+    <a class="bouton" href="cv.pdf" download>Télécharger le CV</a>
+  </section>
+
+  <section id="competences" class="bloc">
+    <h2>Compétences</h2>
+    <div class="tags">
+      <span>HTML/CSS</span>
+      <span>JavaScript</span>
+      <span>Python</span>
+      <span>Java</span>
+      <span>SQL</span>
+      <span>Git</span>
+      <span>Scrum</span>
+    </div>
+  </section>
+
+  <section id="projets" class="bloc gris">
+    <h2>Projets</h2>
+    <div class="filtres">
+      <button class="filtre actif" data-cat="all">Tous</button>
+      <button class="filtre" data-cat="web">Web</button>
+      <button class="filtre" data-cat="data">Data</button>
+    </div>
+    <div class="cartes">
+      <div class="carte" data-cat="web">
+        <h3>Gestion de tâches</h3>
+        <p>Liste de tâches avec ajout et suppression.</p>
+        <a href="https://github.com/" target="_blank">GitHub</a>
+      </div>
+      <div class="carte" data-cat="web">
+        <h3>Site e-commerce</h3>
+        <p>Catalogue, panier et paiement simulé.</p>
+        <a href="https://github.com/" target="_blank">GitHub</a>
+      </div>
+      <div class="carte" data-cat="data">
+        <h3>Analyse de données</h3>
+        <p>Étude d'un jeu de données avec Python.</p>
+        <a href="https://github.com/" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="bloc">
+    <h2>Contact</h2>
+    <form onsubmit="event.preventDefault(); alert('Message envoyé !');">
+      <input type="text" placeholder="Nom" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Message" rows="4" required></textarea>
+      <button type="submit" class="bouton">Envoyer</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2026 Portfolio Ingénieur – ENSA El Jadida</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
