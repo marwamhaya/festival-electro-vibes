@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Billetterie - Electro Vibes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Réservez vos billets pour Electro Vibes</h1>
+        <a href="index.html">Retour à l'accueil</a>
+    </header>
+
+    <main>
+        <form action="#" method="POST">
+            <div>
+                <label for="nom">Nom complet :</label>
+                <input type="text" id="nom" name="nom" required>
+            </div>
+            <br>
+            <div>
+                <label for="email">Adresse Email :</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <br>
+            <div>
+                <label for="pass">Type de pass :</label>
+                <select id="pass" name="pass">
+                    <option value="1jour">Pass 1 Jour - Standard</option>
+                    <option value="3jours">Pass 3 Jours - VIP</option>
+                </select>
+            </div>
+            <br>
+            <button type="submit">Confirmer la réservation</button>
+        </form>
+    </main>
+</body>
+</html>
